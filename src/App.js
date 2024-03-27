@@ -1,3 +1,17 @@
+ mySignup
+import {Routes, Route} from 'react-router-dom';
+import {Login} from './components/Login'
+import './App.css';
+import {SignupPage}  from './components/SignupPage';
+
+function App() {
+//   return (
+// //     <div>
+// //       <SignupPage/>
+// //     </div>
+// //   );
+// // }
+
 import "./App.css";
 import Login from "../src/Components/Login/Login/index";
 import ErrorLogin from "../src/Components/ErrorLogin/index";
@@ -33,6 +47,15 @@ function App() {
       <RouterProvider router={router} />
     </>
   );
-}
+} main
 
+return (
+  <>
+  <Routes>
+    <Route path ="/" element = {<SignupPage/>}/>
+    <Route  path = "/signupPages" element ={<Login/>}/>
+  </Routes>
+  </>
+)
+}
 export default App;
