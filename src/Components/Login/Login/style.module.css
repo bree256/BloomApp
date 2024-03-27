@@ -1,3 +1,15 @@
+.Login {
+  box-sizing: border-box;
+  background-color: #f6f2ee;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  border-radius: 25px;
+  -webkit-box-shadow: -1px 8px 21px -19px rgba(66, 68, 90, 1);
+  -moz-box-shadow: -1px 8px 21px -19px rgba(66, 68, 90, 1);
+  box-shadow: -1px 8px 21px -19px rgba(66, 68, 90, 1);
+}
 .button {
   display: flex;
   flex-direction: column;
@@ -18,9 +30,16 @@
 }
 .black {
   padding: 20px;
+  background-color: #836243;
   color: white;
   border-radius: 15px;
   border: none;
+}
+.blackdisabled {
+  background-color: rgba(66, 68, 90, 1);
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
 }
 .input {
   width: 400px;
@@ -59,14 +78,30 @@
   margin-left: 370px;
   margin-top: 13px;
 }
+.error {
+  text-align: center;
+  background-color: red;
+  width: 100%;
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
+}
 
 @media (max-width: 700px) {
+  .Login {
+    margin-left: 100px;
+    height: 104vh;
+    margin-top: 0;
+    background-color: #f6f2ee;
+  }
+
   .buttoncontainer {
     display: flex;
     flex-direction: column;
   }
   .container {
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    margin-bottom: 50px;
   }
   .buttoncontainer {
     margin-top: 40px;
@@ -82,5 +117,8 @@
   }
   .spaneye {
     margin-left: 310px;
+  }
+  .error {
+    width: 50%;
   }
 }

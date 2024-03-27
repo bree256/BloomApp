@@ -1,6 +1,7 @@
 import "./App.css";
 import Login from "../src/Components/Login/Login/index";
 import ErrorLogin from "../src/Components/ErrorLogin/index";
+import Homepage from "./Components/Homepage";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "/error",
     element: <ErrorLogin />,
+  },
+  {
+    path: "/homepage",
+    element: <Homepage />,
   },
 ]);
 
