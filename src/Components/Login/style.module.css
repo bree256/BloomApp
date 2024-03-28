@@ -4,11 +4,12 @@
   width: 600px;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
   border-radius: 25px;
   -webkit-box-shadow: -1px 8px 21px -19px rgba(66, 68, 90, 1);
   -moz-box-shadow: -1px 8px 21px -19px rgba(66, 68, 90, 1);
   box-shadow: -1px 8px 21px -19px rgba(66, 68, 90, 1);
+  margin: 0 auto;
+  margin-top: 50px;
 }
 .button {
   display: flex;

@@ -1,12 +1,12 @@
 // import React from "react";
-import Button from "../../Button";
+import Button from "../Button/index";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
-import style from "../Login/style.module.css";
+import style from "./style.module.css";
 import { FaRegEyeSlash } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
-import Homepage from "../../Homepage";
+import Homepage from "../Homepage";
 
 const Login = () => {
   const [email, setEmail] = useState("");
