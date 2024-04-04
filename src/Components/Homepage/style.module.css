@@ -1,0 +1,14 @@
+.homepage {
+  background-color: #ecd9c7;
+}
+.h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-weight: 700;
+  font-size: 40px;
+}
+.body {
+  padding: 40px;
+}
