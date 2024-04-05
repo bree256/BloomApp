@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Body from "./Body";
 import style from "../Homepage/style.module.css";
 import Section from "./Section";
+import TopPicks from "./TopPicks";
 
 const Homepage = () => {
   return (
@@ -13,6 +14,7 @@ const Homepage = () => {
         <h4>Why Choose Bloom ?</h4>
       </div>
       <Section />
+      <TopPicks />
     </section>
   );
 };
