@@ -4,6 +4,7 @@ import Body from "./Body";
 import style from "../Homepage/style.module.css";
 import Section from "./Section";
 import TopPicks from "./TopPicks";
+import BeautyServices from "./BeautyServices";
 
 const Homepage = () => {
   return (
@@ -15,6 +16,7 @@ const Homepage = () => {
       </div>
       <Section />
       <TopPicks />
+      <BeautyServices />
     </section>
   );
 };
