@@ -1,0 +1,31 @@
+.spotlight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+.spotlights {
+  width: 220px;
+  height: 260px;
+  margin-top: -259px;
+}
+.spotlights3 {
+  width: 220px;
+  height: 260px;
+  margin-top: 100px;
+}
+.spotlights4 {
+  width: 220px;
+  height: 260px;
+  margin-top: 100px;
+}
+.spotlightcontainer {
+  text-align: center;
+}
+.button {
+  padding: 10px;
+  background-color: #392b1d;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}

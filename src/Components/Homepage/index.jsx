@@ -5,6 +5,9 @@ import style from "../Homepage/style.module.css";
 import Section from "./Section";
 import TopPicks from "./TopPicks";
 import BeautyServices from "./BeautyServices";
+import Spotlight from "./Spotlight";
+import Testimonials from "../Testimonials";
+import Faq from "../Faq";
 
 const Homepage = () => {
   return (
@@ -17,6 +20,9 @@ const Homepage = () => {
       <Section />
       <TopPicks />
       <BeautyServices />
+      <Spotlight />
+      <Testimonials />
+      <Faq />
     </section>
   );
 };
