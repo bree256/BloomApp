@@ -8,6 +8,9 @@ import BeautyServices from "./BeautyServices";
 import Spotlight from "./Spotlight";
 import Testimonials from "../Testimonials";
 import Faq from "../Faq";
+import Blogs from "./Blogs";
+import Experience from "./Experience";
+import Footer from "../Homepage/Footer";
 
 const Homepage = () => {
   return (
@@ -23,6 +26,9 @@ const Homepage = () => {
       <Spotlight />
       <Testimonials />
       <Faq />
+      <Blogs />
+      <Experience />
+      <Footer />
     </section>
   );
 };

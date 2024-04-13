@@ -11,6 +11,8 @@ const Button = ({
   onClick: onClick,
   disabled: disabled,
   className,
+  imgClassName,
+  imgSrc,
 }) => {
   return (
     <button
@@ -24,7 +26,10 @@ const Button = ({
       onClick={onClick}
       disabled={disabled}
     >
-      <Logos className={style.logos} />
+      {imgSrc && (
+        <img src={imgSrc} alt="button icon" className={style.buttonImage} />
+      )}
+      <Logos className={imgClassName} />
       <div className={style.text}>{text}</div>
     </button>
   );
