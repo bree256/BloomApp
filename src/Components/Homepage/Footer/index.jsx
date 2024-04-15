@@ -5,10 +5,12 @@ import style from "../Footer/style.module.css";
 import Button from "../../Button/index";
 import lists from "../data";
 import Bottomfooter from "../../Bottomfooter";
+import Experience from "../Experience";
 
 const Footer = () => {
   return (
     <>
+      <Experience />
       <div className={style.bloomcontainer}>
         <div className={style.bloom}>
           <img src={bloomlogo} alt="bloomlogo" className={style.bloomlogo} />

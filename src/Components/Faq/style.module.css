@@ -1,7 +1,7 @@
 .faqcontainer {
   text-align: center;
   box-sizing: border-box;
-  padding: 15px;
+  padding: 50px;
 }
 .faqs {
   width: 100%;
@@ -97,4 +97,5 @@
 }
 .faqask {
   display: flex;
+  gap: 60px;
 }

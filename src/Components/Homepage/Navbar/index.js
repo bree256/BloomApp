@@ -2,13 +2,13 @@
 import style from "../Navbar/style.module.css";
 import React from "react";
 import profile from "../../../Assets/profile.svg";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className={style.navbar}>
       <ul className={style.nav}>
         <li className="nav-item">
-          <a href="#" className={style.navlink}>
+          <a href="#" className={style.navhome}>
             Home
           </a>
         </li>
@@ -18,9 +18,9 @@ const Navbar = () => {
           </a>
         </li>
         <li className="nav-item">
-          <a href="#" className={style.navlink}>
+          <Link to="/services" className={style.navlink}>
             Services
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
           <a href="#" className={style.navlink}>

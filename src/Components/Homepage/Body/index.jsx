@@ -58,6 +58,9 @@ const Body = () => {
           <img src={barber} alt="barberimage" className={style.barber} />
         </div>
       </section>
+      <h4 className={style.h4}>Why Choose Bloom ?</h4>
+      <br></br>
+      <br></br>
     </>
   );
 };

@@ -2,6 +2,8 @@ import React from "react";
 import quotes from "../../Assets/quotes.svg";
 import style from "../Testimonials/style.module.css";
 import woman from "../../Assets/woman.svg";
+import tripledsalon from "../../Assets/tripledsalon.svg";
+import adams from "../../Assets/adams.svg";
 const Testimonials = () => {
   return (
     <div className={style.testimonials}>
@@ -38,7 +40,7 @@ const Testimonials = () => {
             </p>
           </div>
           <div className={style.customer}>
-            <img src={woman} alt="woman" className={style.woman} />
+            <img src={tripledsalon} alt="salon" className={style.woman} />
             <h6>Triple D Salon </h6>
           </div>
         </div>
@@ -52,7 +54,7 @@ const Testimonials = () => {
             </p>
           </div>
           <div className={style.customer}>
-            <img src={woman} alt="woman" className={style.woman} />
+            <img src={adams} alt="man" className={style.woman} />
             <h6>Adams Ojerekre </h6>
           </div>
         </div>

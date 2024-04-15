@@ -17,9 +17,6 @@ const Homepage = () => {
     <section className={style.homepage}>
       <Navbar />
       <Body />
-      <div className={style.h4}>
-        <h4>Why Choose Bloom ?</h4>
-      </div>
       <Section />
       <TopPicks />
       <BeautyServices />
@@ -27,7 +24,7 @@ const Homepage = () => {
       <Testimonials />
       <Faq />
       <Blogs />
-      <Experience />
+      {/* <Experience /> */}
       <Footer />
     </section>
   );

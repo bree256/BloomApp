@@ -4,11 +4,11 @@
   gap: 60px;
   padding: 15px;
   background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(236, 217, 199, 1) 74%,
-    rgba(153, 153, 153, 1) 100%
+  background: rgb(235, 216, 197);
+  background: radial-gradient(
+    circle,
+    rgba(235, 216, 197, 1) 39%,
+    rgba(247, 237, 223, 1) 100%
   );
 }
 .nav {
@@ -21,6 +21,13 @@
   text-decoration: none;
   list-style: none;
   color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+.navhome {
+  text-decoration: none;
+  list-style: none;
+  color: #7b5c3f;
   font-size: 16px;
   font-weight: 700;
 }
