@@ -6,7 +6,7 @@
 }
 .profilewoman {
   position: absolute;
-  margin-left: 550px;
+  margin-left: 570px;
   margin-top: -162px;
 }
 .h2 {
@@ -20,7 +20,7 @@
   color: white;
 }
 .list {
-  margin-top: 189px;
+  margin-top: 130px;
 }
 .ul {
   list-style: none;
@@ -36,10 +36,11 @@
   gap: 10px;
 }
 .hr {
-  border: 0.5px solid black;
+  border: 0.5px solid #aeaaaa;
   width: 1319px;
   margin-top: -5px;
 }
 .righticon {
-  margin-left: 1100px;
+  margin-left: 1300px;
+  position: absolute;
 }
