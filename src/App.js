@@ -3,6 +3,10 @@ import { SignupPage } from "../src/Components/SignupPage";
 import Login from "../src/Components/Login/index";
 import Homepage from "./Components/Homepage";
 import { Routes, Route } from "react-router-dom";
+import Tripledsalon from "./Components/Tripledsalon";
+import Blogpage from "./Components/BlogPage";
+import Contacts from "./Components/Contacts";
+import Aboutus from "./Components/Aboutus";
 
 // const router = createBrowserRouter([
 //   {
@@ -26,6 +30,10 @@ function App() {
         <Route path="/" element={<SignupPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/homepage" element={<Homepage />} />
+        <Route path="/tripledsalon" element={<Tripledsalon />} />
+        <Route path="/blogpage" element={<Blogpage />} />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/aboutus" element={<Aboutus />} />
       </Routes>
     </>
   );

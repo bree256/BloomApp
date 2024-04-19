@@ -1,0 +1,11 @@
+.container {
+  text-align: center;
+}
+.about {
+  background: rgb(174, 170, 170);
+  background: radial-gradient(
+    circle,
+    rgba(174, 170, 170, 1) 39%,
+    rgba(190, 187, 188, 1) 100%
+  );
+}

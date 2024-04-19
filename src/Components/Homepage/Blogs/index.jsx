@@ -45,16 +45,15 @@ const Blogs = () => {
         </div>
         <div className={style.blog}>
           <img src={facemask} alt="facemask" className={style.comb} />
-          <p className={style.text2}>Natural Hair</p>
+          <p className={style.text2}>Self Care</p>
           <h2 className={style.text}>
-            Embracing Your Natural Crown: A Journey to Love and Care for Your
-            Natural Hair
+            The Power of Self-Care: Nurturing Your Mind, Body, and Soul
           </h2>
           <p className={style.text2}>
-            Explore the beauty and versatility of natural hair in our latest
-            blog post, where we share tips on hair care, styling techniques, and
-            empowering stories to help you embrace and celebrate your unique
-            curls, coils, and kinks.
+            Join us as we explore the transformative effects of self-care
+            practices, from indulgent spa treatments to mindfulness exercises,
+            and learn how to prioritize your well-being in today's fast-paced
+            world.
           </p>
           <div className={style.profilecard}>
             <img
@@ -64,7 +63,7 @@ const Blogs = () => {
             />
             <div className={style.profile}>
               <h5 className={style.text}>Haruna Jaiya</h5>
-              <p className={style.text2}>23 March 2024 - 5 min read</p>
+              <p className={style.text2}>13 Jan 2024 - 5 min read</p>
             </div>
             <div className={style.bookmarks}>
               <img src={heart} alt="heart" className={style.heart} />

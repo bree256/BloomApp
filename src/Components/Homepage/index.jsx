@@ -23,8 +23,7 @@ const Homepage = () => {
       <Spotlight />
       <Testimonials />
       <Faq />
-      <Blogs />
-      {/* <Experience /> */}
+      <Blogs id="blogs" />
       <Footer />
     </section>
   );
