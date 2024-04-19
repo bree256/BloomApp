@@ -7,6 +7,7 @@ import Tripledsalon from "./Components/Tripledsalon";
 import Blogpage from "./Components/BlogPage";
 import Contacts from "./Components/Contacts";
 import Aboutus from "./Components/Aboutus";
+import Profilepage from "./Components/Profilepage";
 
 // const router = createBrowserRouter([
 //   {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/blogpage" element={<Blogpage />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/aboutus" element={<Aboutus />} />
+        <Route path="/profile" element={<Profilepage />} />
       </Routes>
     </>
   );

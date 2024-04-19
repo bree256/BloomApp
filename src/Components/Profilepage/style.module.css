@@ -1,0 +1,45 @@
+.namecontainer {
+  position: absolute;
+  margin-left: 448px;
+  margin-top: 139px;
+  text-align: center;
+}
+.profilewoman {
+  position: absolute;
+  margin-left: 550px;
+  margin-top: -162px;
+}
+.h2 {
+  font-weight: 700;
+  font-size: 52px;
+  color: white;
+}
+.p {
+  font-weight: 700;
+  font-size: 24px;
+  color: white;
+}
+.list {
+  margin-top: 189px;
+}
+.ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.profilepage {
+  background-color: #fff;
+}
+.li {
+  display: flex;
+  gap: 10px;
+}
+.hr {
+  border: 0.5px solid black;
+  width: 1319px;
+  margin-top: -5px;
+}
+.righticon {
+  margin-left: 1100px;
+}

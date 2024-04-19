@@ -1,10 +1,27 @@
 // Navbar.js
 import style from "../Navbar/style.module.css";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import profile from "../../../Assets/profile.svg";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
+  const [navbarStyle, setNavbarStyle] = useState(style.navbar);
+
+  useEffect(() => {
+    if (
+      location.pathname === "/aboutus" ||
+      location.pathname === "/contacts" ||
+      location.pathname === "/blogpage"
+    ) {
+      setNavbarStyle(style.navbarAbout);
+    } else if (location.pathname === "/profile") {
+      setNavbarStyle(style.profileNavbar);
+    } else {
+      setNavbarStyle(style.navbar);
+    }
+  }, [location.pathname]);
+
   const [showDropdown, setShowDropdown] = useState(false);
 
   const toggleDropdown = () => {
@@ -12,7 +29,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={style.navbar}>
+    <nav className={navbarStyle}>
       <ul className={style.nav}>
         <li className={style.navhome}>
           <Link to="/homepage" className={style.navhome}>
@@ -87,7 +104,9 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <img src={profile} alt="profileimage" className={style.profile} />
+      <Link to="/profile">
+        <img src={profile} alt="profileimage" className={style.profile} />
+      </Link>
     </nav>
   );
 };
