@@ -12,6 +12,7 @@ import messages from "../../Assets/messages.svg";
 import rating from "../../Assets/rating.svg";
 import settings from "../../Assets/settings.svg";
 import rightsign from "../../Assets/rightsign.svg";
+import profilebackground from "../../Assets/profilebackground.svg";
 
 const Profilepage = () => {
   return (
@@ -22,6 +23,11 @@ const Profilepage = () => {
           <h2 className={style.h2}>Tamilola Adeboye</h2>
           <p className={style.p}>tamilolaadeboye@gmail.com</p>
         </div>
+        <img
+          src={profilebackground}
+          alt="background image"
+          className={style.profileimage}
+        />
         <img
           src={profileimage}
           alt="background image"

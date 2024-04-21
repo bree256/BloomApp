@@ -1,8 +1,8 @@
 .blogpage {
-  background: rgb(174, 170, 170);
+  background: rgb(235, 216, 197);
   background: radial-gradient(
     circle,
-    rgba(174, 170, 170, 1) 39%,
-    rgba(190, 187, 188, 1) 100%
+    rgba(235, 216, 197, 1) 39%,
+    rgba(247, 237, 223, 1) 100%
   );
 }

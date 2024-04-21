@@ -3,11 +3,16 @@
   margin-left: 448px;
   margin-top: 139px;
   text-align: center;
+  z-index: 1;
 }
 .profilewoman {
   position: absolute;
   margin-left: 570px;
-  margin-top: -162px;
+  margin-top: 420px;
+}
+.profileimage {
+  position: absolute;
+  margin-top: 1px;
 }
 .h2 {
   font-weight: 700;
@@ -20,7 +25,7 @@
   color: white;
 }
 .list {
-  margin-top: 130px;
+  margin-top: 675px;
 }
 .ul {
   list-style: none;

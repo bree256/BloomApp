@@ -3,19 +3,14 @@ import style from "../Navbar/style.module.css";
 import React, { useState, useEffect } from "react";
 import profile from "../../../Assets/profile.svg";
 import { Link, useLocation } from "react-router-dom";
+import bloomlogo from "../../../Assets/bloomlogo.svg";
 
 const Navbar = () => {
   const location = useLocation();
   const [navbarStyle, setNavbarStyle] = useState(style.navbar);
 
   useEffect(() => {
-    if (
-      location.pathname === "/aboutus" ||
-      location.pathname === "/contacts" ||
-      location.pathname === "/blogpage"
-    ) {
-      setNavbarStyle(style.navbarAbout);
-    } else if (location.pathname === "/profile") {
+    if (location.pathname === "/profile") {
       setNavbarStyle(style.profileNavbar);
     } else {
       setNavbarStyle(style.navbar);
@@ -30,6 +25,7 @@ const Navbar = () => {
 
   return (
     <nav className={navbarStyle}>
+      <img src={bloomlogo} alt="logo" className={style.bloomlogo} />
       <ul className={style.nav}>
         <li className={style.navhome}>
           <Link to="/homepage" className={style.navhome}>
