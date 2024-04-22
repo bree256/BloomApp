@@ -1,0 +1,98 @@
+.contactus {
+  background: rgb(235, 216, 197);
+  background: radial-gradient(
+    circle,
+    rgba(235, 216, 197, 1) 39%,
+    rgba(247, 237, 223, 1) 100%
+  );
+}
+.contactnav {
+  background: rgb(174, 170, 170);
+  background: radial-gradient(
+    circle,
+    rgba(174, 170, 170, 1) 39%,
+    rgba(190, 187, 188, 1) 100%
+  );
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4a3726;
+  padding: 40px;
+  border-radius: 0px 0px 42px 43px;
+  -webkit-border-radius: 0px 0px 42px 43px;
+  -moz-border-radius: 0px 0px 42px 43px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #836243;
+  padding: 20px;
+  width: 300px;
+  border-radius: 0px 0px 42px 43px;
+  -webkit-border-radius: 0px 0px 42px 43px;
+  -moz-border-radius: 0px 0px 42px 43px;
+}
+.contactdiv {
+  text-align: center;
+  padding: 100px;
+}
+.namecontainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.formcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.button {
+  padding: 10px;
+  background-color: #392b1d;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 180px;
+}
+.input {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  background-color: #fdf1d9;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.email {
+  width: 452px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  background-color: #fdf1d9;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.message {
+  width: 452px;
+  height: 100px;
+  padding: 10px;
+  border: none;
+  background-color: #fdf1d9;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.imagediv {
+  margin-top: -80px;
+  margin-right: 83px;
+}

@@ -4,3 +4,7 @@
 .text {
   font-weight: bold;
 }
+.buttonImage {
+  position: absolute;
+  margin-left: 60px;
+}

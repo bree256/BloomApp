@@ -1,0 +1,69 @@
+.body {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 40px;
+}
+.barber {
+  width: 600px;
+  height: 900px;
+}
+.h1 {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 71.03px;
+  letter-spacing: -0.5%;
+}
+.h6 {
+  font-size: 16px;
+  font-weight: 400;
+}
+.button {
+  padding: 20px;
+  color: white;
+  position: absolute;
+  border-radius: 15px;
+  margin-left: -210px;
+  margin-top: 7px;
+  border: none;
+}
+
+.input {
+  width: 400px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  -webkit-box-shadow: inset -6px 13px 20px -28px rgba(66, 68, 90, 1);
+  -moz-box-shadow: inset -6px 13px 20px -28px rgba(66, 68, 90, 1);
+  box-shadow: inset -6px 13px 20px -28px rgba(66, 68, 90, 1);
+}
+.p1 {
+  display: block;
+  font-weight: 700;
+  font-size: 52px;
+}
+.services {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.ps {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 24px;
+}
+.metrics {
+  margin-top: -11px;
+}
+.number {
+  margin-top: -14px;
+}
+.h4 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+}

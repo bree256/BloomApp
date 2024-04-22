@@ -1,0 +1,106 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 15px;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+  background: rgb(235, 216, 197);
+  background: radial-gradient(
+    circle,
+    rgba(235, 216, 197, 1) 39%,
+    rgba(247, 237, 223, 1) 100%
+  );
+}
+.navbarAbout {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 15px;
+  cursor: pointer;
+  background: rgb(174, 170, 170);
+  background: radial-gradient(
+    circle,
+    rgba(174, 170, 170, 1) 39%,
+    rgba(190, 187, 188, 1) 100%
+  );
+}
+.profileNavbar {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 15px;
+  cursor: pointer;
+}
+.nav {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  gap: 50px;
+}
+.navlink {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+.navhome {
+  text-decoration: none;
+  list-style: none;
+  color: #7b5c3f;
+  font-size: 16px;
+  font-weight: 700;
+}
+.profile {
+  margin-left: 80px;
+}
+
+.dropdownToggle {
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.option {
+  background-color: #ead7c5;
+}
+.dropdownContainer {
+  position: relative;
+}
+
+.serviceList {
+  position: absolute;
+  top: 100%;
+  width: 200px;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  margin: 0;
+  background-color: #f6ebdc;
+}
+
+.serviceItem {
+  list-style-type: none;
+  padding: 8px 16px;
+}
+
+.serviceItem:hover {
+  background-color: #f4f4f4;
+}
+
+.serviceItem > a {
+  color: #333;
+  text-decoration: none;
+}
+
+.serviceItem > a:hover {
+  color: #555;
+}
