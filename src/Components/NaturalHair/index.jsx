@@ -93,6 +93,7 @@ export const NaturalHairCard = () => {
                 <img src={img31} alt="" /> <span>{card.rating}</span>
               </div>
               {/* </Link> */}
+              
             </div>
           ))
         )}
