@@ -1,4 +1,8 @@
+<<<<<<< HEAD:src/components/Button.jsx
+import styles from './signup.module.css'
+=======
 import styles from "./styles.module.css";
+>>>>>>> origin/main:src/Components/ButtonSignup.jsx
 
 export const ButtonSignup = () => {
   return (
@@ -8,7 +12,7 @@ export const ButtonSignup = () => {
   );
 };
 
-// export const Button = (props) => {
+// export const Buttons = (props) => {
 
 //     const classNames = {
 //         primary: "Btn",

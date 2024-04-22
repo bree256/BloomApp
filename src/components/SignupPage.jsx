@@ -1,45 +1,37 @@
 import { CustomInput } from "./input.jsx";
-import styles from "./styles.module.css";
-import { ButtonSignup } from "./ButtonSignup.jsx";
+import styles from "./signup.module.css";
+import { Button } from "./Button.jsx";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export function SignupPage() {
   const [name, setName] = useState("");
-  const [lastname, setlastName] = useState("");
+  const [lastname, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
-  useEffect(() => {
-    const storedName = localStorage.getItem("signupFormData_name");
-    const storedEmail = localStorage.getItem("signupFormData_email");
-    if (storedName && storedEmail) {
-      setName(storedName);
-      setEmail(storedEmail);
-    }
-  }, []);
-
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     if (password !== confirmPassword) {
       setErrorMessage("Passwords do not match.");
-      return; //Don't proceed if passwords don't match
+      return;
     }
 
-    const userData = { name, email, password };
-
-    const signupSuccessful = true;
-
-    if (signupSuccessful) {
-      alert("signup successful");
-      localStorage.setItem("signFormData_name", name);
-      localStorage.setItem("signFormData_email", email);
-      localStorage.setItem("signFormData_password", password);
+    try {
+      const formData = {
+        name: name,
+        lastname: lastname,
+        email: email,
+        password: password,
+      };
+      // const response = await axios.post('https://localhost:5003/signup', formData);
+      // console.log(response.data);
+    } catch (error) {
+      console.error("Error signing up:", error);
     }
   };
 
@@ -51,22 +43,20 @@ export function SignupPage() {
         <div className={styles.inputcontainer}>
           <input
             className={styles.input}
-            type="name"
+            type="text"
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="First Name"
-          ></input>
+          />
           <input
             className={styles.input}
-            type="name"
+            type="text"
             id="lastname"
             value={lastname}
-            onChange={(e) => setlastName(e.target.value)}
-            placeholder="Last Name 
-                    "
-          ></input>{" "}
-          <br />
+            onChange={(e) => setLastName(e.target.value)}
+            placeholder="Last Name"
+          />
         </div>
         <input
           className={styles.inputemail}
@@ -75,34 +65,35 @@ export function SignupPage() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email"
-        ></input>
+        />
         <CustomInput
           className={styles.Custom}
           type="password"
+          placeholder="Password"
           id="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
-        />{" "}
-        <br />
+        />
         <CustomInput
           type="password"
-          id="password1"
+          id="confirmPassword"
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
-          placeholder="confirm password"
-        />{" "}
-        <br />
+          placeholder="Confirm Password"
+        />
+        {errorMessage && <span className={styles.error}>{errorMessage}</span>}
         <div className={styles.logFlex}>
           <input type="checkbox" />
           <label>
             By checking this box, you agree to our Terms & Conditions
           </label>
           <div>
-                       <ButtonSignup type="submit">Sign Up</ButtonSignup> <br />
-            {errorMessage && (
-              <span className={styles.error}>{errorMessage}</span>
-            )}
+            {" "}
+            <br />
+            <Link to="/EmailVerification">
+              <Button type="submit">Sign Up</Button>
+            </Link>
+            <br />
             <p>or sign up here</p>
           </div>
         </div>
