@@ -82,6 +82,8 @@ a {
   border-radius: 16px;
   background: #fbe3b1;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .texttag {

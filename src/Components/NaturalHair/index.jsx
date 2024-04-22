@@ -21,6 +21,7 @@ import imag28 from "./images/imag28.png"
 import imag29 from "./images/imag29.png"
 import imag30 from "./images/imag30.png"
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom'
 
 
 
@@ -60,44 +61,49 @@ export const NaturalHairCard = () => {
      };
    
   // mapping through all of the cards begins here
+
   return (
-     <div className={style.cardsContainer}>
-       <div className={style.cards}>
-         {/* Display the first 12 cards initially */}
-         {initialCards.map((card) => (
-           <div className={style.card} key={card.id}>
-             <img src={card.imageSrc} alt="" />
-             <h5>{card.name}</h5>
-             <p>{card.distance}</p>
-             <p>{card.priceRange}</p>
-             <div className={style.star} >
-               {/* <CiStar /> <span>{card.rating}</span> */}
-               <img src={img31} alt="" /> <span>{card.rating}</span>
-             </div>
-           </div>
-         ))}
-  
-         {showAllCards && (
-           allCards.slice(12).map((card) => (
-             <div className={style.card} key={card.id}>
-               <img src={card.imageSrc} alt="" />
-               <h5>{card.name}</h5>
-               <p>{card.distance}</p>
-               <p>{card.priceRange}</p>
-               <div className={style.star} >
-                 <img src={img31} alt="" /> <span>{card.rating}</span>
-               </div>
-             </div>
-           ))
-         )}
-       </div> <br />
-        <p className={style.texttag}>Continue exploring Hair Cut  businesses</p>  <br /> <br />
-       {allCards.length > 12 && (
-         
-         <button className={style.buttonCards} onClick={handleShowMore}>
-           {showAllCards ? 'Show Less' : 'Show More'}
-         </button>
-       )}
-     </div>
-   );
-  };
+    <div className={style.cardsContainer}>
+      <div className={style.cards}>
+        {/* Display the first 12 cards initially */}
+        {initialCards.map((card) => (
+          <div className={style.card} key={card.id}>
+             {/* <Link to="/BusinessServices">  */}
+            <img src={card.imageSrc} alt="" />
+            <h5>{card.name}</h5>
+            <p>{card.distance}</p>
+            <p>{card.priceRange}</p>
+            <div className={style.star} >
+              {/* <CiStar /> <span>{card.rating}</span> */}
+              <img src={img31} alt="" /> <span>{card.rating}</span>
+            </div>
+            {/* </Link> */}
+          </div>
+        ))}
+ 
+        {showAllCards && (
+          allCards.slice(12).map((card) => (
+            <div className={style.card} key={card.id}>
+               {/* <Link to="/BusinessServices">  */}
+              <img src={card.imageSrc} alt="" />
+              <h5>{card.name}</h5>
+              <p>{card.distance}</p>
+              <p>{card.priceRange}</p>
+              <div className={style.star} >
+                <img src={img31} alt="" /> <span>{card.rating}</span>
+              </div>
+              {/* </Link> */}
+            </div>
+          ))
+        )}
+      </div> <br />
+       <p className={style.texttag}>Continue exploring Hair Cut  businesses</p>  <br /> <br />
+      {allCards.length > 12 && (
+        
+        <button className={style.buttonCards} onClick={handleShowMore}>
+          {showAllCards ? 'Show Less' : 'Show More'}
+        </button>
+      )}
+    </div>
+  );
+    }

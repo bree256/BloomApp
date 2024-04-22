@@ -13,6 +13,8 @@ import {SpaMassage} from './components/SpaMassageService/SpaMassage'
 import {TattooService} from './components/TattooPiercingService/TattooPiercing'
 import {HandsFeetServices} from './components/HandsFeetServices/HandsFeet'
 import {MuaServices} from "./components/MuaServices/MuaService"
+import { BusinessServices } from './components/NaturalHair/BusinsessService';
+
 
 
 
@@ -31,6 +33,7 @@ return (
     <Route path="/Homepage" element = {<Homepage/>}/>
     <Route path="/BraidsService" element = {<BraidsService/>}/>
     <Route path="/Naturalhair" element = {<Naturalhair/>}/>
+    <Route path='/BusinessServices' element ={<BusinessServices />} />
      <Route path="/HairServices" element ={<HairServices/>} />
      <Route path="/WigService" element ={<WigService/>} />
      <Route path ="/SpaMassage" element ={<SpaMassage/>} />
