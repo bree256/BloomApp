@@ -8,6 +8,7 @@ import Blogpage from "./Components/BlogPage";
 import Contacts from "./Components/Contacts";
 import Aboutus from "./Components/Aboutus";
 import Profilepage from "./Components/Profilepage";
+import BookAnAppointment from "./Components/BookAnAppointment";
 
 // const router = createBrowserRouter([
 //   {
@@ -36,6 +37,7 @@ function App() {
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/aboutus" element={<Aboutus />} />
         <Route path="/profile" element={<Profilepage />} />
+        <Route path="/appointment" element={<BookAnAppointment />} />
       </Routes>
     </>
   );

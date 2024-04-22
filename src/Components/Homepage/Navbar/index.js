@@ -33,9 +33,9 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="nav-item">
-          <a href="#" className={style.navlink}>
+          <Link to="/appointment" className={style.navlink}>
             Online Booking
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
           <div className={style.dropdownContainer}>
