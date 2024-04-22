@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './styles.module.css'
+import styles from './signup.module.css'
 import { FaRegEyeSlash, FaRegEye } from "react-icons/fa6";
 
 

@@ -1,4 +1,4 @@
-import styles from './styles.module.css'
+import styles from './signup.module.css'
 
 
 export const Button = () =>{
@@ -9,7 +9,7 @@ export const Button = () =>{
     )
 }
 
-// export const Button = (props) => {
+// export const Buttons = (props) => {
 
 //     const classNames = {
 //         primary: "Btn",

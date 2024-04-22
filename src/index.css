@@ -1,11 +1,10 @@
 body {
   margin: 0;
- mySignup
   padding: 0;
-  background-color: #fff6ed;
   box-sizing: border-box;
-  
- main
+}
+
+main {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;

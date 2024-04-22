@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../Button/style.module.css";
-const Button = ({
+ export const Button = ({
   backgroundColor,
   text,
   border,
