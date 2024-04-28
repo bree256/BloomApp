@@ -59,7 +59,9 @@ const Navbar = () => {
                   <Link to="/BraidsService">Braids</Link>
                 </li>
                 <li className={style.serviceItem}>
+
                   <Link to="/Wigservice">Wigs n” Weaves</Link>
+                 
                 </li>
                 <li className={style.serviceItem}>
                   <Link to="/HandsFeetServices">Hands & Feet</Link>
@@ -68,6 +70,7 @@ const Navbar = () => {
                   <Link to="/MuaServices">Make Up Artists</Link>
                 </li>
                 <li className={style.serviceItem}>
+
                   <Link to="/TattooService">Tattoo and Piercings</Link>
                 </li>
                 <li className={style.serviceItem}>
