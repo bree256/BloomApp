@@ -68,7 +68,7 @@ export const NaturalHairCard = () => {
         {/* Display the first 12 cards initially */}
         {initialCards.map((card) => (
           <div className={style.card} key={card.id}>
-             {/* <Link to="/BusinessServices">  */}
+            <Link to={`/NaturalHairBusiness/${card.id}`}>
             <img src={card.imageSrc} alt="" />
             <h5>{card.name}</h5>
             <p>{card.distance}</p>
@@ -77,14 +77,14 @@ export const NaturalHairCard = () => {
               {/* <CiStar /> <span>{card.rating}</span> */}
               <img src={img31} alt="" /> <span>{card.rating}</span>
             </div>
-            {/* </Link> */}
+            </Link>
           </div>
         ))}
  
         {showAllCards && (
           allCards.slice(12).map((card) => (
             <div className={style.card} key={card.id}>
-               {/* <Link to="/BusinessServices">  */}
+               <Link to={`/NaturalHairBusiness/${card.id}`}>
               <img src={card.imageSrc} alt="" />
               <h5>{card.name}</h5>
               <p>{card.distance}</p>
@@ -92,7 +92,7 @@ export const NaturalHairCard = () => {
               <div className={style.star} >
                 <img src={img31} alt="" /> <span>{card.rating}</span>
               </div>
-              {/* </Link> */}
+              </Link>
               
             </div>
           ))

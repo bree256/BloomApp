@@ -10,6 +10,7 @@ export const HairServices = () =>{
             <HairServicesHeader/>
             <SecondHeader/> 
             <Card/>
+            
         </div>
     )
 }

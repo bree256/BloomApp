@@ -50,30 +50,30 @@ const Navbar = () => {
             {showDropdown && (
               <ul className={style.serviceList}>
                 <li className={style.serviceItem}>
-                  <Link to="/services/haircare">Hair Care</Link>
+                  <Link to="/HairServices">Hair Care</Link>
                 </li>
                 <li className={style.serviceItem}>
-                  <Link to="/services/naturalhair">Natural Hair</Link>
+                  <Link to="/Naturalhair">Natural Hair</Link>
                 </li>
                 <li className={style.serviceItem}>
-                  <Link to="/services/braids">Braids</Link>
+                  <Link to="/BraidsService">Braids</Link>
                 </li>
                 <li className={style.serviceItem}>
-                  <Link to="/services/WigsandWeaves">Wigs n” Weaves</Link>
+                  <Link to="WigService">Wigs n” Weaves</Link>
                 </li>
                 <li className={style.serviceItem}>
-                  <Link to="/services/handsandFeet">Hands & Feet</Link>
+                  <Link to="/HandsFeetServices">Hands & Feet</Link>
                 </li>
                 <li className={style.serviceItem}>
-                  <Link to="/services/makeupartists">Make Up Artists</Link>
+                  <Link to="/MuaServices">Make Up Artists</Link>
                 </li>
                 <li className={style.serviceItem}>
-                  <Link to="/services/tattooandpiercings">
+                  <Link to="TattooService">
                     Tattoo and Piercings
                   </Link>
                 </li>
                 <li className={style.serviceItem}>
-                  <Link to="/services/spaandmassage">Spa and Massage</Link>
+                  <Link to="/SpaMassage ">Spa and Massage</Link>
                 </li>
               </ul>
             )}
