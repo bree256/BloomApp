@@ -1,13 +1,15 @@
-import { SpaMassageCard } from "./index"
-import { HairServicesHeader, SecondHeader } from '../HairServices/index'
+import { SpaMassageCard } from "./index";
+import { HairServicesHeader, SecondHeader } from "../HairServices/index";
+import Navbar from "../Homepage/Navbar";
+import Footer from "../Homepage/Footer";
 
-
-export const SpaMassage = ()  =>{
-    return( 
-      <div>
-        <HairServicesHeader/>
-        <SecondHeader/>
-        <SpaMassageCard/>
-     </div>
-    )
-}
+export const SpaMassage = () => {
+  return (
+    <div>
+      <Navbar />
+      <SecondHeader />
+      <SpaMassageCard />
+      <Footer />
+    </div>
+  );
+};

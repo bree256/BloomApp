@@ -18,7 +18,7 @@ const Body = () => {
             with Bloom...
           </p>
           <p className={style.h6}>
-            where elegance meets convenience.
+            Where elegance meets convenience.
             <br />
             Welcome to a curated marketplace aggregator designed to
             <br />

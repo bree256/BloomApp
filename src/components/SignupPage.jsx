@@ -272,6 +272,7 @@
 
 import { CustomInput } from "./input.jsx";
 import styles from "./signup.module.css";
+
 import { ButtonSignup } from "./ButtonSignup.jsx";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
@@ -374,7 +375,13 @@ export function SignupPage() {
             By checking this box, you agree to our Terms & Conditions
           </label>
           <div>
-            <ButtonSignup type="submit">Sign Up</ButtonSignup>
+
+            {" "}
+            <br />
+            <Link to="/EmailVerification">
+              <ButtonSignup type="submit">Sign Up</ButtonSignup>
+            </Link>
+
             <br />
             <p>or sign up here</p>
           </div>

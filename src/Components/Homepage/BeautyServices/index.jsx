@@ -14,27 +14,35 @@ const BeautyServices = () => {
       <div>
         <h4 className={style.h4}>We provide the best beauty services here </h4>
         <ul className={style.ul}>
-          <li>
-            <IoCheckboxOutline className={style.tick} /> Dive into a vast array
-            of beauty services and products from top-rated salons, spas,
-            skincare clinics, makeup artists, and more.
-          </li>
-          <li>
-            {" "}
+          <li className={style.liitem1}>
             <IoCheckboxOutline className={style.tick} />
-            Say goodbye to endless scrolling. Our smart recommendation engine
-            tailors suggestions based on your preferences, ensuring you find the
-            perfect match for your unique beauty needs effortlessly.
+            <div>
+              Dive into a vast array of beauty services and products from
+              top-rated salons, spas, skincare clinics, makeup artists, and
+              more.
+            </div>
           </li>
-          <li>
-            {" "}
+          <li className={style.liitem2}>
             <IoCheckboxOutline className={style.tick} />
-            Book appointments with ease directly through our platform.{" "}
+            <div>
+              Say goodbye to endless scrolling. Our smart recommendation engine
+              tailors suggestions based on your preferences, ensuring you find
+              the perfect match for your unique beauty needs effortlessly.
+            </div>
           </li>
-          <li>
+          <li className={style.liitem3}>
             <IoCheckboxOutline className={style.tick} />
-            With fast confirmations from your clients, scheduling your next
-            beauty indulgence has never been smoother
+            <div>
+              {" "}
+              Book appointments with ease directly through our platform.
+            </div>
+          </li>
+          <li className={style.liitem4}>
+            <IoCheckboxOutline className={style.tick} />
+            <div>
+              With fast confirmations from your clients, scheduling your next
+              beauty indulgence has never been smoother
+            </div>
           </li>
         </ul>
         <Button

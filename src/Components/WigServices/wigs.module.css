@@ -95,7 +95,7 @@ a {
   text-align: left;
 }
 .buttonCards {
-  position: absolute;
+  /* position: absolute; */
   bottom: -60rem; /* Adjust as needed */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%);
@@ -104,6 +104,8 @@ a {
   border-radius: 8px;
   width: 192px;
   padding: 10px;
+  margin-top: -1px;
+  margin-left: 699px;
 }
 
 .cards {

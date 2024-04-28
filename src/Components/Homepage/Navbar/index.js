@@ -1,21 +1,21 @@
 // Navbar.js
 import style from "../Navbar/style.module.css";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import profile from "../../../Assets/profile.svg";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import bloomlogo from "../../../Assets/bloomlogo.svg";
 
 const Navbar = () => {
-  const location = useLocation();
-  const [navbarStyle, setNavbarStyle] = useState(style.navbar);
+  // const location = useLocation();
+  // const [navbarStyle, setNavbarStyle] = useState(style.navbar);
 
-  useEffect(() => {
-    if (location.pathname === "/profile") {
-      setNavbarStyle(style.profileNavbar);
-    } else {
-      setNavbarStyle(style.navbar);
-    }
-  }, [location.pathname]);
+  // useEffect(() => {
+  //   if (location.pathname === "/profile") {
+  //     setNavbarStyle(style.profileNavbar);
+  //   } else {
+  //     setNavbarStyle(style.navbar);
+  //   }
+  // }, [location.pathname]);
 
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={navbarStyle}>
+    <nav>
       <img src={bloomlogo} alt="logo" className={style.bloomlogo} />
       <ul className={style.nav}>
         <li className={style.navhome}>
@@ -59,7 +59,9 @@ const Navbar = () => {
                   <Link to="/BraidsService">Braids</Link>
                 </li>
                 <li className={style.serviceItem}>
-                  <Link to="WigService">Wigs n” Weaves</Link>
+
+                  <Link to="/Wigservice">Wigs n” Weaves</Link>
+                 
                 </li>
                 <li className={style.serviceItem}>
                   <Link to="/HandsFeetServices">Hands & Feet</Link>
@@ -68,21 +70,20 @@ const Navbar = () => {
                   <Link to="/MuaServices">Make Up Artists</Link>
                 </li>
                 <li className={style.serviceItem}>
-                  <Link to="TattooService">
-                    Tattoo and Piercings
-                  </Link>
+
+                  <Link to="/TattooService">Tattoo and Piercings</Link>
                 </li>
                 <li className={style.serviceItem}>
-                  <Link to="/SpaMassage ">Spa and Massage</Link>
+                  <Link to="/SpaMassage">Spa and Massage</Link>
                 </li>
               </ul>
             )}
           </div>
         </li>
         <li className="nav-item">
-          <a href="#" className={style.navlink}>
+          <Link to="/tripledsalon" className={style.navlink}>
             Stores
-          </a>
+          </Link>
         </li>
         <li className="nav-item">
           <Link to="/aboutus" className={style.navlink}>

@@ -5,8 +5,16 @@ import style from "../BookAnAppointment/style.module.css";
 import share from "../../Assets/share.svg";
 import save from "../../Assets/save.svg";
 import cornrow from "../../Assets/cornrow.svg";
+import BasicSelect from "../BookAnAppointment/Select";
+import { useNavigate } from "react-router-dom";
 
 const BookAnAppointment = () => {
+  const navigate = useNavigate();
+
+  const handleNextClick = () => {
+    navigate("/calender");
+  };
+
   return (
     <div>
       <Navbar />
@@ -30,6 +38,13 @@ const BookAnAppointment = () => {
           <div>
             <h1>Book An Appointment</h1>
             <h3>Please select a service</h3>
+            <BasicSelect />
+            <div className={style.buttons}>
+              <button className={style.button1}>Cancel</button>
+              <button className={style.button2} onClick={handleNextClick}>
+                Next
+              </button>
+            </div>
           </div>
           <div>
             <img src={cornrow} alt="cornrow image" className={style.image} />
