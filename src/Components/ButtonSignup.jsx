@@ -1,8 +1,4 @@
-<<<<<<< HEAD:src/components/Button.jsx
-import styles from './signup.module.css'
-=======
-import styles from "./styles.module.css";
->>>>>>> origin/main:src/Components/ButtonSignup.jsx
+import styles from "../Components/signup.module.css";
 
 export const ButtonSignup = () => {
   return (

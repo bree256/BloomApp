@@ -21,6 +21,9 @@ const Contacts = () => {
           beauty journey. Please do not hesitate to contact us on any of the
           following contact methods
         </p>
+        <br></br>
+        <br></br>
+
         <div className={style.container}>
           <div className={style.card}>
             <img src={mail} alt="mail" className={style.icon} />

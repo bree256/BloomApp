@@ -1,6 +1,6 @@
 import { CustomInput } from "./input.jsx";
 import styles from "./signup.module.css";
-import { Button } from "./Button.jsx";
+import { ButtonSignup } from "../Components/ButtonSignup.jsx";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import { useState } from "react";
@@ -91,7 +91,7 @@ export function SignupPage() {
             {" "}
             <br />
             <Link to="/EmailVerification">
-              <Button type="submit">Sign Up</Button>
+              <ButtonSignup type="submit">Sign Up</ButtonSignup>
             </Link>
             <br />
             <p>or sign up here</p>

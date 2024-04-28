@@ -1,0 +1,129 @@
+.logocontainer {
+  display: flex;
+  gap: 10px;
+}
+.logos {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.hr {
+  border: 2px solid black;
+  width: 48px;
+  position: absolute;
+  margin-top: 38px;
+  margin-left: 30px;
+}
+.hr1 {
+  border: 2px solid black;
+  width: 48px;
+  position: absolute;
+  margin-top: 38px;
+  margin-left: 142px;
+}
+.barber {
+  width: 600px;
+  height: 749px;
+}
+.imagecontainer {
+  display: flex;
+  gap: 20px;
+  margin-left: 17px;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img2 {
+  margin-left: -20px;
+}
+.reviews {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-top: 62px;
+  margin-right: 640px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  padding: 60px;
+}
+.button {
+  background-color: #392b1e;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-left: 195px;
+}
+.p {
+  font-weight: 700;
+  font-size: 20px;
+}
+.ul {
+  display: flex;
+  flex-direction: column;
+}
+.uls {
+  display: flex;
+  gap: 200px;
+  align-items: flex-start;
+  margin-right: 650px;
+}
+.textcontainer {
+  display: flex;
+  align-items: center;
+  padding: 80px;
+}
+.starcontainer {
+  display: flex;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 15px;
+  gap: 20px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.card {
+  border: 1px solid #593a1a;
+  padding: 20px;
+  border-radius: 15px;
+}
+.cardcontainer {
+  display: flex;
+  padding: 100px;
+  gap: 20px;
+}
+.map {
+  width: 1000px;
+  height: 700px;
+}
+.profile {
+  display: flex;
+}
+.hr4 {
+  border: 0.5px solid black;
+  width: 635px;
+  margin-left: 17px;
+  margin-top: 22px;
+  position: absolute;
+}
+
+.hr3 {
+  border: 0.5px solid black;
+}
+.client {
+  margin-top: 52px;
+}
+.commitment {
+  margin-top: 27px;
+}

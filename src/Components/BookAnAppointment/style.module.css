@@ -29,8 +29,140 @@
 .book {
   display: flex;
   gap: 100px;
+  margin-top: 40px;
+}
+.book2 {
+  display: flex;
+  gap: 100px;
+  margin-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .image {
-  width: 700px;
-  height: 700px;
+  width: 600px;
+  height: 600px;
+}
+.form {
+  background-color: white;
+  width: 400px;
+  border-radius: 5px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 300px;
+  gap: 50px;
+}
+.buttons2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  gap: 50px;
+}
+.button1 {
+  background-color: #fff6ed;
+  padding: 20px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+}
+.button2 {
+  background-color: #392b1e;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  border: none;
+  border-radius: 5px;
+}
+.calender {
+  background-color: #f1ebe5;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+.date {
+  background-color: white;
+}
+.timecontainer {
+  display: flex;
+  margin-top: 30px;
+  background-color: #f1ebe5;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.MuiDigitalClock-list {
+  display: flex;
+  flex-direction: column;
+}
+.form2 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.input {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  background-color: #fdf1d9;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.email {
+  width: 452px;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  background-color: #fdf1d9;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.message {
+  width: 452px;
+  height: 100px;
+  padding: 10px;
+  border: none;
+  background-color: #fdf1d9;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.icon {
+  background-color: green;
+  border-radius: 50%;
+  padding: 20px;
+}
+.confirmed {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.checked {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.loading p {
+  margin: 0;
+  text-align: center;
+}
+.h1 {
+  margin-top: -41px;
 }
