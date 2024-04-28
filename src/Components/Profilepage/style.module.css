@@ -34,7 +34,11 @@
   gap: 10px;
 }
 .profilepage {
-  background-color: #fff;
+  background-color: linear-gradient(
+    87.34deg,
+    rgba(255, 255, 255, 0.2) 17.79%,
+    rgba(153, 153, 153, 0.2) 61.85%
+  );
 }
 .li {
   display: flex;

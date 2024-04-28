@@ -1,7 +1,4 @@
-
-import styles from "../Components/signup.module.css";
 import styles from "./signup.module.css";
-
 
 export const ButtonSignup = () => {
   return (

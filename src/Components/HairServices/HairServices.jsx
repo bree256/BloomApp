@@ -1,7 +1,8 @@
-import { Card, HairServicesHeader, SecondHeader } from "./index";
+import { Card, SecondHeader } from "./index";
 
 import style from "./service.module.css";
 import Navbar from "../Homepage/Navbar";
+import Footer from "../Homepage/Footer";
 
 export const HairServices = () => {
   return (
@@ -9,23 +10,7 @@ export const HairServices = () => {
       <Navbar />
       <SecondHeader />
       <Card />
+      <Footer />
     </div>
   );
 };
-
-import style from "./service.module.css"
-
-
-
-
-export const HairServices = () =>{
-    return(
-        <div className={style.services}>
-            <HairServicesHeader/>
-            <SecondHeader/> 
-            <Card/>
-            
-        </div>
-    )
-}
-

@@ -13,6 +13,7 @@ import rating from "../../Assets/rating.svg";
 import settings from "../../Assets/settings.svg";
 import rightsign from "../../Assets/rightsign.svg";
 import profilebackground from "../../Assets/profilebackground.svg";
+import Footer from "../Homepage/Footer";
 
 const Profilepage = () => {
   return (
@@ -87,6 +88,10 @@ const Profilepage = () => {
           <hr className={style.hr}></hr>
         </ul>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <Footer />
     </div>
   );
 };

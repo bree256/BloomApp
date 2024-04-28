@@ -8,7 +8,6 @@
 // import {auth} from "../firebase/config.js"
 // import { createUserWithEmailAndPassword } from "firebase/auth";
 
-
 // export function SignupPage() {
 //   // const [email, setEmail] = useState("");
 //   // const [password, setPassword] = useState("");
@@ -28,8 +27,8 @@
 //   // }
 
 //   function handleCredentials(e) {
-    
-//     setUserCredentials({...userCredentials, [e.target.name]: e.target.value}); 
+
+//     setUserCredentials({...userCredentials, [e.target.name]: e.target.value});
 //     console.log(userCredentials);
 //   }
 
@@ -44,7 +43,7 @@
 //   .catch((error) => {
 //     setErrorMessage(error.message);
 //   });
-    
+
 //   }
 
 //   return (
@@ -98,12 +97,12 @@
 //           <label>
 //             By checking this box, you agree to our Terms & Conditions
 //           </label>
-//           <div> 
+//           <div>
 //             {" "}
 //             <br />
 //               <ButtonSignup onClick ={(e) =>(handleSignup(e))}>Sign Up</ButtonSignup>
 //               {
-//                    errorMessage && 
+//                    errorMessage &&
 //                    <div className="error">
 //                    {errorMessage}
 //                  </div>
@@ -132,8 +131,6 @@
 //     </div>
 //   );
 // }
-
-
 
 // import { CustomInput } from "./input.jsx";
 // import styles from "./signup.module.css";
@@ -268,11 +265,8 @@
 //   );
 // }
 
-
-
 import { CustomInput } from "./input.jsx";
 import styles from "./signup.module.css";
-
 import { ButtonSignup } from "./ButtonSignup.jsx";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
@@ -375,13 +369,7 @@ export function SignupPage() {
             By checking this box, you agree to our Terms & Conditions
           </label>
           <div>
-
-            {" "}
-            <br />
-            <Link to="/EmailVerification">
-              <ButtonSignup type="submit">Sign Up</ButtonSignup>
-            </Link>
-
+            <ButtonSignup type="submit">Sign Up</ButtonSignup>
             <br />
             <p>or sign up here</p>
           </div>
@@ -398,7 +386,9 @@ export function SignupPage() {
         <br />
         <p>
           Already have an account with Bloom?
-          <Link className={styles.anchor} to="/Login">Login in </Link> 
+          <Link className={styles.anchor} to="/Login">
+            Login in{" "}
+          </Link>
         </p>
       </form>
     </div>

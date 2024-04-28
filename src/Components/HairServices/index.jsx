@@ -31,12 +31,8 @@ import imag28 from "./images/imag28.png";
 import imag29 from "./images/imag29.png";
 import imag30 from "./images/imag30.png";
 import { RiSearchLine, RiCloseFill } from "react-icons/ri";
-
 import { useState, useEffect } from "react";
-import Footer from "../Homepage/Footer";
-import { useState, useEffect} from 'react';
-import {Link} from "react-router-dom"
-
+import { Link } from "react-router-dom";
 
 // first header for navigation
 export const HairServicesHeader = () => {
@@ -357,27 +353,22 @@ export const Card = () => {
     },
   ];
 
-
   // Initially display 12 cards
   const initialCards = allCards.slice(0, 12);
-   // Initially display 12 cards
-   const initialCards = allCards.slice(0, 12);
-   
 
-   // Function to toggle visibility of additional cards
-   const handleShowMore = () => {
-     setShowAllCards(!showAllCards); // Toggle state on button click
-   };
- 
-// mapping through all of the cards begins here
+  // Function to toggle visibility of additional cards
+  const handleShowMore = () => {
+    setShowAllCards(!showAllCards); // Toggle state on button click
+  };
 
+  // mapping through all of the cards begins here
 
   return (
     <div className={style.cardsContainer}>
       <div className={style.cards}>
         {/* Display the first 12 cards initially */}
         {initialCards.map((card) => (
-          <Link to={`/HairBusiness/${card.id}`} key={card.id}> 
+          <Link to={`/HairBusiness/${card.id}`} key={card.id}>
             <div className={style.card}>
               <img src={card.imageSrc} alt="" />
               <h5>{card.name}</h5>
@@ -390,7 +381,7 @@ export const Card = () => {
           </Link>
         ))}
         {/* use map function to show all cards */}
-        {showAllCards && (
+        {showAllCards &&
           allCards.slice(12).map((card) => (
             <Link to={`/HairBusiness/${card.id}`} key={card.id}>
               <div className={style.card}>
@@ -403,64 +394,6 @@ export const Card = () => {
                 </div>
               </div>
             </Link>
-          ))
-        )}
-      </div> <br />
-      <p className={style.texttag}>Continue exploring Hair Cut  businesses</p> <br /> <br />
-      {allCards.length > 12 && (
-        <button className={style.buttonCards} onClick={handleShowMore}>
-          {showAllCards ? 'Show Less' : 'Show More'}
-        </button>
-      )}
-    </div>
-  );
-};
-
-
-
-
-
-
-
-
-
-
-
-
-  // Function to toggle visibility of additional cards
-  const handleShowMore = () => {
-    setShowAllCards(!showAllCards); // Toggle state on button click
-  };
-
-
-  // mapping through all of the cards begins here
-  return (
-    <div className={style.cardsContainer}>
-      <div className={style.cards}>
-        {/* Display the first 12 cards initially */}
-        {initialCards.map((card) => (
-          <div className={style.card} key={card.id}>
-            <img src={card.imageSrc} alt="" />
-            <h5>{card.name}</h5>
-            <p>{card.distance}</p>
-            <p>{card.priceRange}</p>
-            <div className={style.star}>
-              <img src={img31} alt="" /> <span>{card.rating}</span>
-            </div>
-          </div>
-        ))}
-        {/* use map function to show all cards */}
-        {showAllCards &&
-          allCards.slice(12).map((card) => (
-            <div className={style.card} key={card.id}>
-              <img src={card.imageSrc} alt="" />
-              <h5>{card.name}</h5>
-              <p>{card.distance}</p>
-              <p>{card.priceRange}</p>
-              <div className={style.star}>
-                <img src={img31} alt="" /> <span>{card.rating}</span>
-              </div>
-            </div>
           ))}
       </div>{" "}
       <br />
@@ -473,10 +406,6 @@ export const Card = () => {
           {showAllCards ? "Show Less" : "Show More"}
         </button>
       )}
-      <Footer />
     </div>
   );
 };
-
-
-
