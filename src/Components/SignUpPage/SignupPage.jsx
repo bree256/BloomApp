@@ -266,14 +266,14 @@
 // }
 
 import { CustomInput } from "./input.jsx";
-import styles from "./signup.module.css";
-import { ButtonSignup } from "./ButtonSignup.jsx";
+import styles from "../SignUpPage/signup.module.css";
+import { ButtonSignup } from "../ButtonSignup.jsx";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import { Link } from "react-router-dom";
-import { auth } from "../firebase/config.js";
+import { auth } from "../../firebase/config.js";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 
 export function SignupPage() {

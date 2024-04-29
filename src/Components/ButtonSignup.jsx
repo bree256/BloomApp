@@ -1,4 +1,4 @@
-import styles from "./signup.module.css";
+import styles from "../Components/SignUpPage/signup.module.css";
 
 export const ButtonSignup = () => {
   return (

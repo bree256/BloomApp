@@ -17,7 +17,7 @@ import { Routes, Route } from "react-router-dom";
 import { EmailVerification } from "../src/Components/EmailVerification/index";
 import { Successverification } from "../src/Components/EmailVerification/Successverification";
 import { NaturalHairBusiness } from "../src/Components/NaturalHair/BusinsessService";
-import { SignupPage } from "./Components/SignupPage";
+import { SignupPage } from "../src/Components/SignUpPage/SignupPage";
 import Login from "../src/Components/Signup/Login/index";
 import Tripledsalon from "./Components/Tripledsalon";
 import Blogpage from "./Components/BlogPage";
