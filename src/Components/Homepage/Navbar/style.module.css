@@ -105,3 +105,6 @@
 .serviceItem > a:hover {
   color: #555;
 }
+.active {
+  color: #836243 !important;
+}

@@ -2,6 +2,7 @@ import style from "../Faq/style.module.css";
 import flower from "../../Assets/flower.svg";
 import Button from "../Button/index";
 import Faq2 from "../Homepage/Faq2";
+import { Link } from "react-router-dom";
 const Faq = () => {
   return (
     <div className={style.faqcontainer}>
@@ -18,11 +19,13 @@ const Faq = () => {
           <img src={flower} alt="flower" className={style.flower} />
           <h3>Ask your question</h3>
           <p>Feel Free A Ask questions on anything</p>
-          <Button
-            text="Ask a question"
-            width="250px"
-            className={style.button}
-          />
+          <Link to="/contacts">
+            <Button
+              text="Ask a question"
+              width="250px"
+              className={style.button}
+            />
+          </Link>
         </div>
       </div>
     </div>

@@ -371,7 +371,7 @@ export function SignupPage() {
           <div>
             <ButtonSignup type="submit">Sign Up</ButtonSignup>
             <br />
-            <p>or sign up here</p>
+            <p className={styles.sign}>or sign up here</p>
           </div>
         </div>
         <div className={styles.btnss}>

@@ -32,7 +32,6 @@ import imag29 from "./images/imag29.png";
 import imag30 from "./images/imag30.png";
 import { RiSearchLine, RiCloseFill } from "react-icons/ri";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 // first header for navigation
 export const HairServicesHeader = () => {
@@ -152,7 +151,7 @@ export const SecondHeader = () => {
         </p>
       </div>
 
-      <div className={style.inputfield}>
+      {/* <div className={style.inputfield}>
         <input
           className={style.searchInput}
           type="text"
@@ -160,8 +159,8 @@ export const SecondHeader = () => {
           onChange={handleChange}
           value={search}
           onKeyDown={handleKeyDown}
-        />
-        <div className={style.search}>
+        /> */}
+      {/* <div className={style.search}>
           {search === "" ? (
             <RiSearchLine />
           ) : (
@@ -182,7 +181,7 @@ export const SecondHeader = () => {
             );
           })}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
@@ -368,7 +367,19 @@ export const Card = () => {
       <div className={style.cards}>
         {/* Display the first 12 cards initially */}
         {initialCards.map((card) => (
-          <Link to={`/HairBusiness/${card.id}`} key={card.id}>
+          <div className={style.card}>
+            <img src={card.imageSrc} alt="" />
+            <h5>{card.name}</h5>
+            <p>{card.distance}</p>
+            <p>{card.priceRange}</p>
+            <div className={style.star}>
+              <img src={img31} alt="" /> <span>{card.rating}</span>
+            </div>
+          </div>
+        ))}
+        {/* use map function to show all cards */}
+        {showAllCards &&
+          allCards.slice(12).map((card) => (
             <div className={style.card}>
               <img src={card.imageSrc} alt="" />
               <h5>{card.name}</h5>
@@ -378,22 +389,6 @@ export const Card = () => {
                 <img src={img31} alt="" /> <span>{card.rating}</span>
               </div>
             </div>
-          </Link>
-        ))}
-        {/* use map function to show all cards */}
-        {showAllCards &&
-          allCards.slice(12).map((card) => (
-            <Link to={`/HairBusiness/${card.id}`} key={card.id}>
-              <div className={style.card}>
-                <img src={card.imageSrc} alt="" />
-                <h5>{card.name}</h5>
-                <p>{card.distance}</p>
-                <p>{card.priceRange}</p>
-                <div className={style.star}>
-                  <img src={img31} alt="" /> <span>{card.rating}</span>
-                </div>
-              </div>
-            </Link>
           ))}
       </div>{" "}
       <br />

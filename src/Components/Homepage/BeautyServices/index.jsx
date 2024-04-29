@@ -3,6 +3,7 @@ import blackbarber from "../../../Assets/blackbarber.svg";
 import style from "../BeautyServices/style.module.css";
 import { IoCheckboxOutline } from "react-icons/io5";
 import Button from "../../Button/index";
+import { Link } from "react-router-dom";
 
 const BeautyServices = () => {
   return (
@@ -45,11 +46,13 @@ const BeautyServices = () => {
             </div>
           </li>
         </ul>
-        <Button
-          text="Book An Appointment"
-          width="500px"
-          className={style.button}
-        />
+        <Link to="/appointment">
+          <Button
+            text="Book An Appointment"
+            width="500px"
+            className={style.button}
+          />
+        </Link>
       </div>
     </div>
   );

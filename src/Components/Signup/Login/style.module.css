@@ -45,7 +45,8 @@
   background-color: #836243;
   padding: 10px;
   border-radius: 8px;
-  width: 30%;
+  width: 90%;
+  border: none;
 }
 .blackdisabled {
   background-color: rgba(66, 68, 90, 1);
