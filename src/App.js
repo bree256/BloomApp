@@ -12,7 +12,7 @@ import { MuaServices } from "../src/Components/MuaServices/MuaService";
 // import { BusinessServices } from "../src/";
 
 // import Login from "../src/Components/Login";
-import Homepage from "../../bloom/src/Components/Homepage/index";
+import Homepage from "../src/Components/Homepage/index";
 import { Routes, Route } from "react-router-dom";
 import { EmailVerification } from "../src/Components/EmailVerification/index";
 import { Successverification } from "../src/Components/EmailVerification/Successverification";
