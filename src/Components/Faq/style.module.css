@@ -75,6 +75,7 @@
   border: none;
   border-radius: 10px;
   color: white;
+  margin-left: 34px;
 }
 .faq.open .faqanswer {
   margin-bottom: 15px;

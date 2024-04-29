@@ -18,7 +18,7 @@ const Faq = () => {
         <div className={style.ask}>
           <img src={flower} alt="flower" className={style.flower} />
           <h3>Ask your question</h3>
-          <p>Feel Free A Ask questions on anything</p>
+          <p>Feel free to Ask questions anytime</p>
           <Link to="/contacts">
             <Button
               text="Ask a question"
