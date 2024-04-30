@@ -2,7 +2,7 @@ import React from "react";
 import barber from "../../../Assets/barber.svg";
 import style from "../Body/style.module.css";
 import Button from "../../../Components/Button/index";
-
+import { Link } from "react-router-dom";
 const Body = () => {
   return (
     <>
@@ -34,12 +34,14 @@ const Body = () => {
               required
               placeholder="Enter email address"
             />
-            <Button
-              backgroundColor="#392b1e"
-              text="Get Started"
-              width="200px"
-              className={style.button}
-            />
+            <Link to="/contacts" className={style.button}>
+              <Button
+                backgroundColor="#392b1e"
+                text="Get Started"
+                width="200px"
+                className={style.button}
+              />
+            </Link>
           </div>
           <div className={style.services}>
             <p className={style.p1}>324</p>
