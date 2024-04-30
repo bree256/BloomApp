@@ -28,6 +28,8 @@ import BookAnAppointment from "./Components/BookAnAppointment";
 import Calender from "./Components/BookAnAppointment/Calender";
 import Information from "./Components/BookAnAppointment/Information";
 import Confirmed from "./Components/BookAnAppointment/Confirmed";
+import Naijanailartist from "./Components/Tripledsalon/Naijanailartist";
+
 function App() {
   return (
     <>
@@ -59,6 +61,7 @@ function App() {
         <Route path="/calender" element={<Calender />} />
         <Route path="/information" element={<Information />} />
         <Route path="/confirmed" element={<Confirmed />} />
+        <Route path="/nailartist" element={<Naijanailartist />} />
       </Routes>
     </>
   );

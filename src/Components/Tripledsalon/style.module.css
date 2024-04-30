@@ -25,6 +25,11 @@
   width: 600px;
   height: 749px;
 }
+.barber1 {
+  width: 600px;
+  height: 602px;
+}
+
 .imagecontainer {
   display: flex;
   gap: 20px;

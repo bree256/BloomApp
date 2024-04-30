@@ -6,6 +6,7 @@ import Button from "../../Button/index";
 import lists from "../data";
 import Bottomfooter from "../../Bottomfooter";
 import Experience from "../Experience";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -14,12 +15,14 @@ const Footer = () => {
       <div className={style.bloomcontainer}>
         <div className={style.bloom}>
           <img src={bloomlogo} alt="bloomlogo" className={style.bloomlogo} />
-          <Button
-            text="Enter your email"
-            width="300px"
-            className={style.button}
-            imgSrc={messagearrow}
-          />
+          <Link to="/contacts" className={style.button}>
+            <Button
+              text="Enter your email"
+              width="300px"
+              className={style.button}
+              imgSrc={messagearrow}
+            />
+          </Link>
         </div>
         <div className={style.lists}>
           {lists.map((list, index) => (
