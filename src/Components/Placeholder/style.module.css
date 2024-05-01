@@ -1,0 +1,14 @@
+.container {
+  text-align: center;
+  /* background-color: #fff6ed; */
+  margin-top: 60px;
+  gap: 40px;
+}
+.images {
+  display: flex;
+  align-items: center;
+  text-align: end;
+  gap: 50px;
+  margin-left: 218px;
+  margin-top: 50px;
+}

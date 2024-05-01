@@ -29,6 +29,7 @@ import Calender from "./Components/BookAnAppointment/Calender";
 import Information from "./Components/BookAnAppointment/Information";
 import Confirmed from "./Components/BookAnAppointment/Confirmed";
 import Naijanailartist from "./Components/Tripledsalon/Naijanailartist";
+import Placeholder from "./Components/Placeholder";
 
 function App() {
   return (
@@ -62,6 +63,7 @@ function App() {
         <Route path="/information" element={<Information />} />
         <Route path="/confirmed" element={<Confirmed />} />
         <Route path="/nailartist" element={<Naijanailartist />} />
+        <Route path="/placeholder" element={<Placeholder />} />
       </Routes>
     </>
   );
